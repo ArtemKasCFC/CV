@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artem Kasperovich || CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+      root {
+        --first: #111;
+        --second: #232323;
+        --font-main: #fff;
+        --font-add: #f4d956;
+        --svg-inner: #232323;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(#111 10%, #f4d956, #111 90%);
+      }
+
+      .container {
+        /* max-width: 945px; */
+        max-width: 50%;
+        height: 100vh;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: 1fr 2.5fr;
+        background-color: #111;
+      }
+
+      .first {
+        margin-top: 120px;
+        margin-left: 30px;
+        background: linear-gradient(rgb(35, 35, 35), rgb(1, 1, 1));
+        padding: 20px;
+        padding-top: 40px;
+      }
+
+      .second {
+        margin-left: 60px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #111;
+      }
+
+      .name {
+        font-size: 39px;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 1.2;
+        margin-bottom: 4px;
+      }
+
+      .position {
+        letter-spacing: 4px;
+        font-size: 14px;
+        font-weight: 700;
+        background-color: #f4d956;
+        color: #000;
+        display: inline-block;
+        padding: 0 8px;
+        margin-bottom: 60px;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        letter-spacing: 6px;
+        /* color: #c3ae45; */
+      }
+
+      .about {
+        font-size: 12px;
+        line-height: 1.6;
+        margin-bottom: 60px;
+        color: #ccc;
+      }
+
+      .contact {
+        font-weight: 500;
+      }
+
+      .contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+      }
+
+      .contact-list a {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        gap: 8px;
+      }
+
+      .contact-list ion-icon {
+        width: 14px;
+        height: 14px;
+        color: #f4d956;
+      }
+
+      a:link,
+      a:visited {
+        font-size: 12px;
+        text-decoration: none;
+      }
+
+      .education {
+        margin-bottom: 30px;
+      }
+
+      .education p {
+        margin-bottom: 4px;
+      }
+
+      .education-list {
+        list-style: none;
+        color: #ccc;
+      }
+
+      .education-list {
+        margin-bottom: 10px;
+      }
+
+      .education-list li {
+        font-size: 14px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .education-list ion-icon {
+        transform: translateY(-15%);
+      }
+
+      .experience {
+        margin-bottom: 30px;
+      }
+
+      .date {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+        font-weight: 700;
+        background-color: #ccc;
+        color: #000;
+        display: inline-block;
+        padding: 0px 2px;
+      }
+
+      .project {
+        margin-bottom: 4px;
+      }
+
+      .exp-link:link,
+      .exp-link:visited {
+        color: #fff;
+        font-size: 16px;
+      }
+
+      .exp-link:hover,
+      .exp-link:active {
+        color: #f4d956;
+      }
+
+      .project-exp {
+        list-style: none;
+        margin-bottom: 16px;
+      }
+
+      .project-exp li {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 14px;
+        color: #ccc;
+      }
+
+      /* .courses-list ion-icon {
+        color: #f4d956;
+      } */
+
+      .skill-lists {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 40px;
+        gap: 8px;
+        column-gap: 22px;
+        justify-content: center;
+        align-items: center;
+        color: #ccc;
+      }
+
+      .skill-lists p {
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
+
+      .skill-lists ul {
+        list-style: square;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first">
+        <h1 class="name">Artem Kasperovich</h1>
+        <p class="position">QA ENGINEER</p>
+        <h2>About Me</h2>
+        <p class="about">
+          Highly motivated and detail-oriented QA Engineer with a passion for exploring new technologies and improving
+          testing processes. I have experience in both manual and automated testing.
+        </p>
+        <ul class="contact-list">
+          <li>
+            <a href="#"
+              ><ion-icon name="home-outline"></ion-icon>
+              <p>Belarus, Minsk</p></a
+            >
+          </li>
+          <li>
+            <a href="tel:375293358503"
+              ><ion-icon name="call-outline"></ion-icon>
+              <p>+375 (29) 335 85 03</p></a
+            >
+          </li>
+          <li>
+            <a href="mailto:artem.kas.cfc@gmail.com"
+              ><ion-icon name="mail-outline"></ion-icon>
+              <p>artem.kas.cfc@gmail.com</p></a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/ArtemKasCFC"
+              ><ion-icon name="logo-github"></ion-icon>
+              <p>github.com/ArtemKasCFC</p></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="second">
+        <div class="education">
+          <h2>Education</h2>
+          <p>Belarusian National Technical University, IIDO</p>
+          <ul class="education-list">
+            <li>
+              <ion-icon name="remove-outline"></ion-icon>
+              <p>Automated information processing systems</p>
+            </li>
+          </ul>
+          <p>Courses</p>
+          <ul class="education-list">
+            <li>
+              <ion-icon name="remove-outline"></ion-icon>
+              <p>IT Academy Manual Testing</p>
+            </li>
+            <li>
+              <ion-icon name="remove-outline"></ion-icon>
+              <p>Ksendzov QA Course</p>
+            </li>
+          </ul>
+        </div>
+        <div class="experience">
+          <h2>Experience</h2>
+          <p class="date">From July 2023</p>
+          <p class="project">
+            QA Trainee in
+            <a
+              class="exp-link"
+              href="https://by.linkedin.com/company/itxqa?trk=public_profile_experience-item_profile-section-card_subtitle-click"
+              target="_blank"
+              >ITX</a
+            >
+            &dash; Fintech website
+            <a class="exp-link" href="https://capital.com" target="_blank">Capital.com</a> &lpar;prod version&rpar;
+          </p>
+          <ul class="project-exp">
+            <li>
+              <ion-icon name="remove-outline"></ion-icon>
+              <p>Web testing: desktop, mobile</p>
+            </li>
+            <li>
+              <ion-icon name="remove-outline"></ion-icon>
+              <p>Perform smoke, regression, re-test and exploratory testing</p>
+            </li>
+            <li>
+              <ion-icon name="remove-outline"></ion-icon>
+              <p>Cross-browser and cross-platform testing</p>
+            </li>
+            <li>
+              <ion-icon name="remove-outline"></ion-icon>
+              <p>Localization testing</p>
+            </li>
+            <li>
+              <ion-icon name="remove-outline"></ion-icon>
+              <p>Bug reporting</p>
+            </li>
+            <li>
+              <ion-icon name="remove-outline"></ion-icon>
+              <p>Keeping testing artifacts up-to-date</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skills">
+          <h2>My Skills</h2>
+          <div class="skill-lists">
+            <div>
+              <p>Test Management Systems</p>
+              <ul>
+                <li>Qase</li>
+                <li>TestTrail</li>
+              </ul>
+            </div>
+            <div>
+              <p>Bug Tracking Systems</p>
+              <ul>
+                <li>Jira</li>
+                <li>Azure</li>
+              </ul>
+            </div>
+            <div>
+              <p>Sniffers</p>
+              <ul>
+                <li>Charles Proxy</li>
+              </ul>
+            </div>
+            <div>
+              <p>Programming languages</p>
+              <ul>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div>
+              <p>Database Management Systems</p>
+              <ul>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+            <div>
+              <p>Markup and Stylesheet languages</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div>
+              <p>Automation Testing</p>
+              <ul>
+                <li>Cypress</li>
+                <li>Postman</li>
+              </ul>
+            </div>
+            <div>
+              <p>OS</p>
+              <ul>
+                <li>Windows</li>
+                <li>Linux</li>
+              </ul>
+            </div>
+            <div>
+              <p>Virtual Machines</p>
+              <ul>
+                <li>VirtualBox</li>
+              </ul>
+            </div>
+            <div>
+              <p>CI/CD</p>
+              <ul>
+                <li>Jenkins</li>
+              </ul>
+            </div>
+            <div>
+              <p>Version Control Systems</p>
+              <ul>
+                <li>Git</li>
+              </ul>
+            </div>
+            <div>
+              <p>Foreign languages</p>
+              <ul>
+                <li>English - B1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
